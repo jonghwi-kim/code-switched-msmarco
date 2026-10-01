@@ -1,0 +1,10 @@
+torch                    # install the CUDA build for your GPU
+transformers>=4.30,<5    # tested 4.49 (transformers 5 breaks Awesome-Align tokenization)
+sentencepiece
+protobuf
+spacy>=3.7               # + python -m spacy download en_core_web_sm
+jieba                    # Chinese tokenization (word alignment)
+nltk                     # + stopwords, wordnet, omw-1.4, punkt, punkt_tab
+scikit-learn             # KeyBERT candidate n-grams (CountVectorizer); KeyBERT itself is reimplemented
+sentence-transformers
+tqdm
